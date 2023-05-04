@@ -13,6 +13,31 @@ p,a{
     font-family: 'Montserrat', sans-serif;
 }
 
+.navbar{
+    background-color: #EB8A90;
+    display:flex;
+    justify-content: space-around;
+    position:fixed;
+    width:100%;
+}
+
+.logo{
+    width:20%;
+    display:inline;
+}
+
+ul li{
+    width:60%;
+    display:inline-block;
+    margin:20px;
+    width:100px;
+}
+
+li a{
+    color:white;
+    text-decoration: none;
+}
+
 #firstrow{
     background-color: white;
     min-height: 700px;
@@ -20,6 +45,14 @@ p,a{
     align-items: center;
     padding:20px;
 }
+
+#pic{
+    /* width:100%; */
+    border-radius: 50% 50%;
+    height:400px;
+    width:400px;
+}
+
 #intro{
     min-height: 300px;
     padding:20px 50px;
@@ -100,16 +133,36 @@ p,a{
     margin:10px;
 }
 
+#gallery{
+    display:flex;
+    flex-direction: column;
+}
+
+#gal1{
+    flex:30%;
+    padding:5px;
+    width:100px;
+    height:100px;
+}
+
+#gal2{
+    flex:30%;
+    padding:5px;
+    width:100px;
+    height:100px;
+}
+
+#gal3{
+    flex:30%;
+    padding:5px;
+    width:100px;
+    height:100px;
+}
+
 #aboutme{
     margin:20px;
     padding:20px;
     width:55%;
-}
-
-#pic{
-    /* width:100%; */
-    border-radius: 10% 0 10% 0;
-    height:500px;
 }
 
 #aboutme > p{
@@ -145,7 +198,7 @@ p,a{
     line-height: 3;
 }
 
-.fourthrow{
+#fourthrow{
     background-color: #EB8A90;
     padding:40px 60px 30px 60px;
     min-height: 200px;
@@ -154,7 +207,7 @@ p,a{
 
 #goup > a{
     color:white;
-    font-size:50px;
+    font-size:40px;
 }
 
 .contact{
@@ -166,25 +219,89 @@ p,a{
     color:white;
 }
 
+#mailme{
+    background-color: white;
+    border:2px solid #EB8A90;
+    color:#EB8A90;
+    margin:5px;
+    padding:5px;
+    font-size: 20px;
+    min-width: 50px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition-timing-function: linear;
+}
+
+#mailme:hover{
+    background-color: #EB8A90;
+    border:2px solid black;
+    color:white;
+}
+
 #icons{
-    font-size: 28px;
     text-align: center;
-    padding: 20px;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
+    width:30%;
+    line-height: 1.5;
+    align-items: center;
 }
 
 #icons > a{
-    font-size: 50px;
+    font-size: 25px;
     color: white;
-    margin: 20px 20px;
+    margin: 5px 5px;
+}
+
+#last{
+    width:40%;
+    text-align:left;
+    color:white;
+    padding: 20px;
+    line-height: 1;
+    font-size: 18px;
 }
 
 #footer{
     background-color: black;
     /* min-height: 70px; */
-    text-align: center;
-    color:white;
-    padding: 30px;
-    line-height: 3;
-    font-size: 20px;
+    display:flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:600px){
+    .navbar{
+        display:flex;
+        flex-direction: column;
+    }
+    #firstrow{
+        display: flex;
+        flex-direction: column;
+    }
+    #pic{
+        width:200px;
+        height: 200px;
+    }
+    #intro{
+        font-size: 20px;
+    }
+    #secondrow2{
+        display: flex;
+        flex-direction: column;
+    }
+    #thirdrow2{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    #icons{
+        display: flex;
+        flex-direction: column;
+    }
+    #last{
+        display: flex;
+        flex-direction: column;
+    }
 }
