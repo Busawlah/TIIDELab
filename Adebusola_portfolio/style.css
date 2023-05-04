@@ -273,6 +273,10 @@ li a{
         display:flex;
         flex-direction: column;
     }
+    /* .menu{
+        display:flex;
+        flex-direction: column;
+    } */
     #firstrow{
         display: flex;
         flex-direction: column;
